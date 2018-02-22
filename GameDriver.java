@@ -39,7 +39,7 @@ public class GameDriver {
                        "experimentations... who knows? You're just a civilian.");
     System.out.println("You're in your house watching the news seeing everything taking place.");
     System.out.println("Luckily because you have played many games about zombies and survival you will be given the power ");
-    System.out.println("to start off with one of 3 jobs! But first tell me your name!");
+    System.out.println("to start off with a job! But first tell me your name!");
     
     //Space added here. Will now add spacing for a more aesthetic look.
     System.out.println(" ");
@@ -52,18 +52,16 @@ public class GameDriver {
     System.out.println(name + " huh? That's a pretty strange name. Eh... this is just a demo after all so whatever floats your boat! " + 
                       "Now that we have your strange name you ");
     
-    System.out.println("mind telling me which job you would like to start off with? ");
+    System.out.println("mind telling me which job you would like to start off with? Oh wait... ");
     
-    System.out.println("For now you " + 
-                       "can choose between: Scavenger, Marksman, and Brawl- oh wait you know what? Let's leave " +
-                       "This up to chance! ");
+    System.out.println("You can only choose Scavenger... lol... oops? :D");
     
     System.out.println(" ");
     
-    System.out.println("You'll get a random number from 1-3. Whichever number you get will determine which job you'll " +
-                       "begin the game with. ");
+    System.out.println("You'll get a random number from 1-3. If you roll a 1 then you get to keep playing, but " +
+                       "if you roll a 2 or 3 then it's game over.");
     
-    System.out.println("1 is for Scavenger, 2 for Marksman, and 3 for Brawler! Are you ready to begin?");
+    System.out.println("Are you ready to begin? ");
     
     System.out.println(" ");
     
@@ -72,45 +70,21 @@ public class GameDriver {
     
     System.out.println(" ");
     
+    //Generating random number between 1-3
     int job = (1 + (int)(Math.random() * ((3 - 1) + 1)));
     
-    //Random number between 1-3
+    //This will display random number
     System.out.println("You got number " + job + "!");
     
     System.out.println(" ");
     
-    if(job == 1) {
-      System.out.println("Scavenger... Actually there isn't much to scavenge in this world so any of the other two " + 
-                        "jobs would've been much MUCH better to have. Good luck!" );
-    }
-    
-    if(job == 2) {
-      System.out.println("Marksman... Having a good aim to shoot zombies in the head is great and all, but " +
-                        "unfortunately you live in a city where guns are banned. ");
-      System.out.println("Should've believed in the constitution!");
-    }
-    
-    if(job == 3) {
-      System.out.println("Brawler...  Having experience in close combat should be great when fighting " +
-                        "other humans and zombies.");
-      System.out.println("Although, due to playing video games for 18 hours a day every day means that " +
-                         "muscle atrophy will be quite a problem.");
-    
-    //Decided to remove this dialogue due to lack of knowledge about muscle building
-    //System.out.println("Lack of food = little calories for your muscles so you'll have to make due with your skinny arms. ");
-    }
-    
-    //Decided to remove this bit for a different ending
-    /*if(job == 4) {
-      System.out.println("You got the hidden number 4! Sadly there isn't a job assigned to number 4 so I'll " +
-                        "just give you an instant death. ");
-      System.out.println("Don't worry don't worry. You won't have to deal with the struggle of this horrid " +
-                        "new world. Goodbye...");
-    }*/
-    
+    if(job == 1 ) {
+      System.out.println("Scavenger... Actually there isn't much to scavenge in this horrid new world so " +
+                         "you'll have to rely on yourself. Good luck!");
+      
     System.out.println(" ");
     
-    System.out.println("Alright! now that you have your poorly randomly chosen job are you ready to start this game?");
+    System.out.println("Alright! now that you have your poorly chosen job are you ready to start this game?");
     
     System.out.println(" ");
     
@@ -144,7 +118,22 @@ public class GameDriver {
                        "STARTING RESOURCES, AND POWERFUL WEAPONS.");
     
     System.out.println(" ");
+    }
     
+    //Player has lost
+    else {
+      System.out.println("Ooh that's too bad. Game Over! ");
+      
+      System.out.println(" ");
+    }
+    
+    //Decided to remove this bit for a different ending
+    /*if(job == 4) {
+      System.out.println("You got the hidden number 4! Sadly there isn't a job assigned to number 4 so I'll " +
+                        "just give you an instant death. ");
+      System.out.println("Don't worry don't worry. You won't have to deal with the struggle of this " +
+                        "new world. Goodbye...");
+    }*/
     
     //Game over
     System.out.println("  ############            #                  #               #         #########   \n "
