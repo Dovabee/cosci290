@@ -6,15 +6,18 @@
 import java.util.Scanner;
 
 //GameDriver
-public class GameDriver {
+public class GameDriver{
   
   //Application... START!!
-  public static void main(String[] args) {
+  public static void main(String[] args){
     
     //Variables
     Scanner input = new Scanner(System.in); //Scanner initialized 
+    String response = "";
+    String response2 = "";
     String name = "";
-    String PlayerChoice = "";
+    String yes = "";
+    String PlayerChoice1 = "";
     String PlayerChoice2 = "";
     String PlayerChoice3 = "";
     String PlayerChoice4 = "";
@@ -66,19 +69,20 @@ public class GameDriver {
     System.out.println(" ");
     
     //Player confirms 1st choice
-    PlayerChoice: input.next();
+    PlayerChoice1: input.next();
     
     System.out.println(" ");
     
     //Generating random number between 1-3
-    int job = (1 + (int)(Math.random() * ((3 - 1) + 1)));
+    //remember to change the 1 to a 3 again! (1 + (int)(Math.random() * ((1 - 1) + 1))) ==> (1 + (int)(Math.random() * ((3 - 1) + 1)))
+    int job = (1 + (int)(Math.random() * ((1 - 1) + 1)));
     
-    //This will display random number
+    //display results of random number generator
     System.out.println("You got number " + job + "!");
     
     System.out.println(" ");
     
-    if(job == 1 ) {
+    if(job == 1 ){
       System.out.println("Scavenger... Actually there isn't much to scavenge in this horrid new world so " +
                          "you'll have to rely on yourself. Good luck!");
       
@@ -88,28 +92,78 @@ public class GameDriver {
     
     System.out.println(" ");
     
-    //Player confirms 2nd choice
-    PlayerChoice2: input.next();
+      //Player confirms 2nd choice
+      PlayerChoice2: input.next();
     
     System.out.println(" ");
     
-    System.out.println("Are you sure? ");
+    System.out.println("Oh whoah whoah whoah wait a minute there speedy Gonzales! I just have to ask you a few more questions... "
+                      + "for something.");
     
+    System.out.println("What are those questions you ask? Well let me tell you! In this game I decided to add hunger to this game. "
+                      + "Would  you like to start off with some food? ");
+      
     System.out.println(" ");
     
-    //Player confirms 3rd choice
-    PlayerChoice3: input.next();
-    
+    //Player gives response. Player will recieve twinkies no matter the response given
+      PlayerChoice3: input.next();
+      
+    System.out.println(" ");
+      
+    System.out.println("Hmm alright here are some twinkies for you. Now what do you say? ");
+      
+    System.out.println(" ");
+      
+      response = input.next();
+      
     System.out.println(" ");
     
-    System.out.println("Really really sure?? ");
-    
+    System.out.println("There you go! :D ");
+      
+    System.out.println(" ");
+      
+    System.out.println("Now that I've given you a few hours headstart with some food I decided that I want to make you play the random numbers game again, ");
+      
+    System.out.println("but this time the number you roll will depend on which limb you're going to lose! "
+                       + "Doesn't that sound fun? ");
+      
+    System.out.println(" ");
+      
+      //Player gives response
+      PlayerChoice4: input.next();
+      
     System.out.println(" ");
     
-    //Player confirms 4th and final choice
-    PlayerChoice4: input.next();
-    
+    System.out.println("Oh Don't be such a Debbie Downer! Whenever your ready just give the word and we'll get "
+                      + "this little number generator to do its thing. ");
+      
     System.out.println(" ");
+      
+      response2 = input.next();
+      
+    System.out.println(" ");
+      
+    System.out.println("Let's see what unlucky number you've chanced upon... ");
+      
+    System.out.println(" ");
+      
+      //Generating random number between 1-4
+      int randomnum = (1 + (int)(Math.random() * ((4 - 1) + 1)));
+      
+      //display results of random number number generator
+      System.out.println("It seems you've landed on unlucky number" + randomnum + " ! ");
+      
+      System.out.println(" ");
+      
+      if(randomnum == 1 ){
+        System.out.println(" ")
+          
+          if(randomnum == 2 ){
+        System.out.println(" ")
+          if(randomnum == 3 ){
+        System.out.println(" ")
+          if(randomnum == 4 ){
+        System.out.println(" ")
     
     System.out.println("Okay then! Let's finally start this g- GAME DEMO IS NOW OVER. FULL GAME WILL BE RELEASED " +
                       "NEXT SPRING.");
@@ -119,8 +173,9 @@ public class GameDriver {
     
     System.out.println(" ");
     }
+    }
     
-    //Player has lost
+    //Player has lost game because of losing game of chance to random number generator line 76-83.
     else {
       System.out.println("Ooh that's too bad. Game Over! ");
       
@@ -136,25 +191,18 @@ public class GameDriver {
     }*/
     
     //Game over
-    System.out.println("  ############            #                  #               #         #########   \n "
-                      + " #                      # #                # #             # #        #           \n "
-                      + " #                     #   #              #   #           #   #       #           \n "
-                      + " #                    #     #            #     #         #     #      #           \n "
-                      + " #      #######      #       #          #       #       #       #     #########   \n "
-                      + " #         #  #     ###########        #         #     #         #    #           \n "
-                      + " #         #  #    #           #      #           #   #           #   #           \n "
-                      + " #         #  #   #             #    #             # #             #  #           \n "
-                      + " ###########     #               #  #               #               # #########   \n "
-                      + "                                                                                  \n "
-                      + " ############  #               #   #########  ##########     ##                   \n "
-                      + " #          #   #             #    #          #        #     ##                   \n "
-                      + " #          #    #           #     #          #        #     ##                   \n "
-                      + " #          #     #         #      #          #       #      ##                   \n "
-                      + " #          #      #       #       #########  ########       ##                   \n "
-                      + " #          #       #     #        #          #       #      ##                   \n "
-                      + " #          #        #   #         #          #        #                          \n "
-                      + " #          #         # #          #          #         #    ##                   \n "
-                      + " ############          #           #########  #          #   ##                   \n ");
+      System.out.println("         ________    _____      _____  ___________            \n "
+                      + "       /  _____/   /  _  \\    /     \\ \\_   _____/         \n "
+                      + "      /   \\  ___  /  /_\\  \\  /  \\ /  \\ |    __)_        \n "
+                      + "      \\    \\_\\  \\/    |    \\/    Y    \\|        \\     \n "
+                      + "       \\______  /\\____|__  /\\____|__  /_______  /         \n "
+                      + "              \\/         \\/         \\/        \\/         \n "
+                      + "      ____________   _________________________  ._.          \n "
+                      + "      \\_____  \\   \\ /   /\\_   _____/\\______   \\ | |    \n "
+                      + "       /   |   \\   Y   /  |    __)_  |       _/ | |         \n "
+                      + "      /    |    \\     /   |        \\ |    |   \\  \\|      \n "
+                      + "      \\_______  /\\___/   /_______  / |____|_  /  __        \n "
+                      + "              \\/                 \\/         \\/   \\/      \n ");
                       
   }
 }
@@ -162,3 +210,26 @@ public class GameDriver {
    //Player chooses job here
    //job = input.next();  <== removed prompt for user input due to lack of knowledge of "if-else" statements with words if there are any             
    //"(Just say yes there are no other choices right now :(  )");  <== removed added dialogue from line 65
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
