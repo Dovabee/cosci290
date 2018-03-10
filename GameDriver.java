@@ -42,7 +42,7 @@ public class GameDriver{
                        "experimentations... who knows? You're just a civilian.");
     System.out.println("You're in your house watching the news seeing everything taking place.");
     System.out.println("Luckily because you have played many games about zombies and survival you will be given the power ");
-    System.out.println("to start off with a job! But first tell me your name!");
+    System.out.println("to start off with a job! But first you mind telling me your name?");
     
     //Space added here. Will now add spacing for a more aesthetic look.
     System.out.println(" ");
@@ -156,14 +156,23 @@ public class GameDriver{
       System.out.println(" ");
       
       if(randomnum == 1 ){
-        System.out.println(" ")
+        System.out.println("There goes your left arm. Thankfully you have a spare to use. ");
+        System.out.println(" ");
           
-          if(randomnum == 2 ){
-        System.out.println(" ")
-          if(randomnum == 3 ){
-        System.out.println(" ")
-          if(randomnum == 4 ){
-        System.out.println(" ")
+      }if(randomnum == 2 ){
+        System.out.println("Say goodbye to your right arm. Here's hoping you're a lefty! ");
+        System.out.println(" ");
+          
+      }if(randomnum == 3 ){
+        System.out.println("No more left leg. Luckily there's a wooden crutch laying around that you can use. ");
+        System.out.println(" ");
+          
+      }if(randomnum == 4 ){
+        System.out.println("You aren't going to be sprinting anytime soon without your right leg. "
+                          + "It's a good thing the zombies are pretty slow eh? ");
+        System.out.println(" ");
+        
+      }
     
     System.out.println("Okay then! Let's finally start this g- GAME DEMO IS NOW OVER. FULL GAME WILL BE RELEASED " +
                       "NEXT SPRING.");
@@ -172,7 +181,7 @@ public class GameDriver{
                        "STARTING RESOURCES, AND POWERFUL WEAPONS.");
     
     System.out.println(" ");
-    }
+    
     }
     
     //Player has lost game because of losing game of chance to random number generator line 76-83.
