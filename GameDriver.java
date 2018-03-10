@@ -1,6 +1,10 @@
 /*
   Francisco Delgado
+  
   CoSci 290
+  
+  Lab 7
+  
 */
 
 import java.util.Scanner;
