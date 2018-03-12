@@ -1,0 +1,1 @@
+In "Preferences" > "User" > "General": I disaabled "Autocomplete".
