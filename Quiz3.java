@@ -15,9 +15,6 @@ public class Quiz3{
   //Start of program execution
   public static void main(String[] args){
     
-    //initializing scanner for inputs
-    Scanner input = new Scanner(System.in);
-    
     //begginning problem 1.9
     
     /*
