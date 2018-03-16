@@ -42,7 +42,7 @@ public class Lab9{
     //Now isolate the digit "3" in 932 using division
     quotient = num / 10;  /* 932 / 10 == 93 -- We have 93, but now we use remainder to remove the middle digit "3"
                                                  in 93. Now we divide 93 by 10 to isolate the "3"
-                             */
+                           */
     
     middledigit = quotient % 10; // 93 % 10 == 3 -- We have isolated the middle digit "3"
     
@@ -66,5 +66,9 @@ public class Lab9{
     
     System.out.println(" ");
     
+    /*
+      NOTE!! Even though I only used the number 932, anyone who inputs a number between 0 - 1000
+      that has been inputted should get the total sum of the digits.
+    */
   }
 }
