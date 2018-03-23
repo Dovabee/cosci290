@@ -1,3 +1,12 @@
+Summary:
+---------------------
+The game takes place on Catalina Island. The player (you), having woken up you have to take the boat
+to get back home. Everyone on the island was drugged, turning them into zombies. It's in the player's
+best interest to try and survive and get to the end goal of the game which is the docks.
+
+Objects Used:
+---------------------
+
 class: Enemies
 
 object: zombie, sprinter, feral dog, zombie dog, bloated zombie
