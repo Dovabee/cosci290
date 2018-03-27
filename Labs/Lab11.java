@@ -1,13 +1,10 @@
 /*
+  
   Francisco Delgado
   
   Co Sci 290
   
-  Do this problem from the book:
-
-  3.12 (Palindrome number) Write a program that prompts the user to enter
-  a three-digit integer and determines whether it is a palindrome number.
-  A number is a palindrome if it reads the same from right to left and from left to right.
+  Midterm test
   
 */
 
@@ -24,35 +21,48 @@ public class Lab11{
     Scanner input = new Scanner(System.in);
     
     //variable declarations
-    int ThreeDigitInt;
     int lastdigit;
     int middledigit;
     int firstdigit;
-    int ThreeDigitNum;
-    int quotient;
+    int FiveDigitnumber;
+    int temp1;
+    int secondlastdigit;
+    int temp2;
+    int temp3;
+    int secondDigit;
+    int FIVEdigitnum;
     
-    //prompt user to enter a 3 digit integer
-    System.out.println("Enter a 3 digit integer: ");
-      ThreeDigitNum = input.nextInt();
+    //prompt user to enter a 5 digit integer
+    System.out.println("Enter a 5 digit integer: ");
+      FiveDigitnumber = input.nextInt();
+      
+    FIVEdigitnum = FiveDigitnumber;
     
-    lastdigit = ThreeDigitNum % 10;
+    lastdigit = FiveDigitnumber % 10;
     
-    quotient = ThreeDigitNum / 10;
+    temp1 = FiveDigitnumber / 10;
     
-    middledigit = quotient % 10;
+    secondlastdigit = temp1 % 10;
     
-    firstdigit = quotient / 10;
+    temp2 = FiveDigitnumber = temp1 / 10;
+    
+    middledigit = temp2 % 10;
+    
+    temp3 = temp2 / 10;
+    
+    secondDigit = temp3 % 10;
+    
+    firstdigit = temp3 / 10;
     
     //Check to see if the first digit and last digit is the same
-    if (firstdigit == lastdigit){
-      System.out.println(ThreeDigitNum + " is a palindrome.");
+    if (firstdigit == lastdigit && secondDigit == secondlastdigit){
+      System.out.println(FIVEdigitnum + " is a palindrome.");
     }
     else
-      System.out.println(ThreeDigitNum + " is not a palindrome.");
+      System.out.println(FIVEdigitnum + " is not a palindrome.");
       
   }
 }
-//I collaborated with Cesar
 
 
 

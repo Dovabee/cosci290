@@ -132,6 +132,16 @@ public class Lab10{
         }
 */
 
+/*
+  
+  Do this problem from the book:
+
+  3.12 (Palindrome number) Write a program that prompts the user to enter
+  a three-digit integer and determines whether it is a palindrome number.
+  A number is a palindrome if it reads the same from right to left and from left to right.
+  
+*/
+
 
 
 
