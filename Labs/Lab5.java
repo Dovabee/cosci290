@@ -4,6 +4,10 @@
   
   Lab 5
   - fix the logic and make this code check if each character is a letter
+
+Grade Notes:
+9/10
+
 */
 
 import java.util.Scanner;

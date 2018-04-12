@@ -9,6 +9,9 @@
   all the digits in the integer. For example, if an integer is 932, the sum of all its digits is 14. 
   Hint: Use the % operator to extract digits, and use the / operator to remove the extracted digit. 
   For instance, 932 % 10 = 2 and 932 / 10 = 93.
+
+  Grade Notes:
+  10/10
 */
 
 //import Scanner from java.util package

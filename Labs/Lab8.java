@@ -19,6 +19,8 @@ The formula for the conversion is as follows: fahrenheit = (9 / 5) * celsius + 3
 radius and length of a cylinder and computes the area and volume using
 the following formulas: area = radius * radius * p volume = area * length
 
+Grade Notes:
+10/10
 */
 
 import java.util.Scanner;
