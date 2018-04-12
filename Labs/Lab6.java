@@ -25,6 +25,10 @@
    Please enter in a whole number.
    3
    The sum of 3 and 5 is 8
+
+
+   Grade Notes:
+   10/10
   
 */
 

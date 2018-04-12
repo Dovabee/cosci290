@@ -15,6 +15,10 @@
   input: 7 5 10
   
   we want output to be: 5 7 10
+
+
+  Grade Notes:
+  10/10
   
 */
 

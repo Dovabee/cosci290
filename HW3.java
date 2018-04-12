@@ -1,3 +1,8 @@
+/*
+	Grade Notes:
+	2/10 for documentation.txt
+*/
+
 //class
 public class HW3{
   
