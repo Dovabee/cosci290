@@ -54,7 +54,12 @@ public class Lab11{
     
     firstdigit = temp3 / 10;
     
-    //Check to see if the first digit and last digit is the same
+    /*
+      
+      Check to see if the first digit and last digit is the same, as well
+      as the second digit and the second last digit.
+      
+    */
     if (firstdigit == lastdigit && secondDigit == secondlastdigit){
       System.out.println(FIVEdigitnum + " is a palindrome.");
     }
