@@ -1,0 +1,20 @@
+Math Symbols and Their Meaning
+------------------------------
+
+Relational Operators:
+
+----------------------------------------------------------------------------------
+Java Operator     Name                            Example (radius is 5)     Result
+----------------------------------------------------------------------------------
+
+<                 Less than                       radius < 0                false
+
+<=                Less than or equal to           radius <= 0               false
+
+>                 Greater than                    radius > 0                true
+
+>=                Greater than or equal to        radius >= 0               true
+
+==                Equal to                        radius == 0               false
+
+!=                Not equal to                    radius != 0               true
