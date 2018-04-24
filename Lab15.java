@@ -34,7 +34,7 @@
 //import Scanner from java.util package
 import java.util.Scanner;
 
-public class Lab13{
+public class Lab15{
   
   //start of program
   public static void main(String[] args){
@@ -43,28 +43,13 @@ public class Lab13{
     Scanner input = new Scanner(System.in);
     
     //declare variables
-    int firstdigit = 0;
-    int middledigit = 0;
-    int lastdigit = 0;
-    int d = -5;
+    int num;
     
     //prompt user to enter an integer (max 3 digits allowed)
     System.out.println("Enter an integer (max of 3 digits allowed): ");
       num = input.nextInt();
     
-    System.out.println("Operations on a and b: ");
-    System.out.println("addition = " + add(a, b));
-    System.out.println("subtraciton = " + subtract(a, b));
-    System.out.println("multiplication = " + multiply(a, b));
-    System.out.println("division = " + divide(a, b));
-    
-    System.out.println(" ");
-    
-    System.out.println("Operations on c and d: ");
-    System.out.println("addition = " + add(c, d));
-    System.out.println("subtraciton = " + subtract(c, d));
-    System.out.println("multiplication = " + multiply(c, d));
-    System.out.println("division = " + divide(c, d));
+    System.out.println("The sum of the digits in number " + num + " is " + sumDigits(n) + ".");
     
   }//end of main
   
@@ -78,10 +63,6 @@ public class Lab13{
     int quotient;
     int num;
     int sum = 0;
-    
-    //prompt user to enter an integer. Max number of digits possible to input is 3.
-    System.out.println("Enter a number between 0 and 1000: ");
-      num = input.nextInt();
     
     //last digit isolated
     lastdigit = num % 10; 
@@ -100,7 +81,7 @@ public class Lab13{
     
     return sum;
     
-  }
+  }//end of sumDigits
 }
 
 /*
