@@ -14,7 +14,8 @@
 
   Max digit size of n is 3.
 
-  For example, sumDigits(234) returns 9 (2 + 3 + 4). (Hint: Use the % operator to extract digits, and the / operator to remove the extracted digit. For instance, to extract 4 from 234, use 234 % 10 (= 4). To remove 4 from 234, use 234 / 10 (= 23). 
+  For example, sumDigits(234) returns 9 (2 + 3 + 4). (Hint: Use the % operator to extract digits, and the / operator to remove the extracted digit.
+                                                      For instance, to extract 4 from 234, use 234 % 10 (= 4). To remove 4 from 234, use 234 / 10 (= 23). 
 
  
   
@@ -33,14 +34,42 @@
 //import Scanner from java.util package
 import java.util.Scanner;
 
-//class
-public class Lab15{
+public class Lab13{
   
-  //start of program execution
-  public static int sumDigits(int n){
+  //start of program
+  public static void main(String[] args){
     
     //initializing Scanner
     Scanner input = new Scanner(System.in);
+    
+    //declare variables
+    int firstdigit = 0;
+    int middledigit = 0;
+    int lastdigit = 0;
+    int d = -5;
+    
+    //prompt user to enter an integer (max 3 digits allowed)
+    System.out.println("Enter an integer (max of 3 digits allowed): ");
+      num = input.nextInt();
+    
+    System.out.println("Operations on a and b: ");
+    System.out.println("addition = " + add(a, b));
+    System.out.println("subtraciton = " + subtract(a, b));
+    System.out.println("multiplication = " + multiply(a, b));
+    System.out.println("division = " + divide(a, b));
+    
+    System.out.println(" ");
+    
+    System.out.println("Operations on c and d: ");
+    System.out.println("addition = " + add(c, d));
+    System.out.println("subtraciton = " + subtract(c, d));
+    System.out.println("multiplication = " + multiply(c, d));
+    System.out.println("division = " + divide(c, d));
+    
+  }//end of main
+  
+  //This method finds the sum of all the digits in a number (max 3 digits).
+  public static int sumDigits(int n){
     
     //variable declarations
     int lastdigit;
@@ -48,7 +77,7 @@ public class Lab15{
     int firstdigit;
     int quotient;
     int num;
-    int sum;
+    int sum = 0;
     
     //prompt user to enter an integer. Max number of digits possible to input is 3.
     System.out.println("Enter a number between 0 and 1000: ");
@@ -69,14 +98,7 @@ public class Lab15{
     //Calculate the total sum of the digits
     sum = firstdigit + middledigit + lastdigit;
     
-    System.out.println(" ");
-    
-    //Display results
-    System.out.println("The sum of all the digits is " + sum);
-    
-    System.out.println(" ");
-    
-    
+    return sum;
     
   }
 }
@@ -135,6 +157,45 @@ public class Lab9{
     
   }
 }
+*/
+
+/*
+  //This method finds the sum of all the digits in a number (max 3 digits).
+  public static int sumDigits(int n){
+    
+    //variable declarations
+    int lastdigit;
+    int middledigit;
+    int firstdigit;
+    int quotient;
+    int num;
+    int sum;
+    
+    //prompt user to enter an integer. Max number of digits possible to input is 3.
+    System.out.println("Enter a number between 0 and 1000: ");
+      num = input.nextInt();
+    
+    //last digit isolated
+    lastdigit = num % 10; 
+       
+    //middle digit and last digit now == quotient
+    quotient = num / 10;
+    
+    //middle digit isolated
+    middledigit = quotient % 10;
+    
+    //first digit isolated
+    firstdigit = quotient / 10;
+    
+    //Calculate the total sum of the digits
+    sum = firstdigit + middledigit + lastdigit;
+    
+    System.out.println(" ");
+    
+    //Display results
+    System.out.println("The sum of all the digits is " + sum);
+    
+    System.out.println(" ");
 */
 
 
