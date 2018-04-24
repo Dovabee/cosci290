@@ -1,0 +1,33 @@
+Summary:
+---------------------
+The game takes place on Catalina Island. The player (you), having woken up you have to take the boat
+to get back home. Everyone on the island was drugged, turning them into zombies. It's in the player's
+best interest to try and survive and get to the end goal of the game which is the docks.
+
+Objects Used:
+---------------------
+
+class: Enemies
+
+object: zombie, sprinter, feral dog, zombie dog, bloated zombie
+
+class: Explosives
+
+object: grenade, molotov, pipe bomb
+
+class: melee weapons
+
+objects: hammer, baseball bat, wrench, wooden board
+
+class: Firearms
+
+object: revolver, rusty pistol, assault rifle, sniper rifle shotgun
+
+class: People
+
+object: merchant, beggar, bandit
+
+class: Food
+
+object: moldy food, energy bar, jar of honey, can of beans, dog meat, cooked dog meat
+
