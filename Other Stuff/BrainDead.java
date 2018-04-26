@@ -14,13 +14,16 @@ public class BrainDead{
     //calling StartingSplashScreen
     StartingSplashScreen();
     intro();
+    response = input.next();
+    action = input.next();
     Scene1();
     //Scene2();
     EndingSplashScreen();
       
   }//end of main
         
-    public static void StartingSplashScreen(){
+  //starting splash screen method  
+  public static void StartingSplashScreen(){
     
         //splash screen
         System.out.println("  :::====  :::====  :::====  ::: :::= === :::====  :::===== :::====  :::====  \n "
@@ -31,7 +34,7 @@ public class BrainDead{
     
     }//end of StartingSplashScreen method
   
-  //using  
+  //intro method
   public static void intro(){
     
     //intro
@@ -42,7 +45,11 @@ public class BrainDead{
     System.out.println("Branded Zombies with a hunger for your flesh ");
     System.out.println("What do you do? ");
     System.out.println("How will you survive? ");
-  }
+    
+  }//end of intro method
+  
+  //Scene 1 method
+  public static void Scene1(){
   
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
@@ -55,7 +62,7 @@ public class BrainDead{
     System.out.println(" ");
     
     //Player gives response to question
-    response = input.next();
+    //response = input.next();
   
     if((response.toLowerCase()).equals("breakfast")){
       System.out.println("Let's go downstairs to the kitchen.");
@@ -72,7 +79,7 @@ public class BrainDead{
       System.out.println("Run or call for help? ");
       
       //Player decides either to run or call for help
-      action = input.next();
+      //action = input.next();
       
       //1st nested if and else if
       if((action.toLowerCase()).equals("run")){
@@ -95,10 +102,13 @@ public class BrainDead{
                        + "you don't want to pay the cancellation fee.");
       
        System.out.println("You eventually die of thirst. The end! ");
+    }
                         
       else{
       System.out.println("I don't understand that ");//remember to add loop later
     }
+    
+  }//end of Scene1 method
       
      public static void EndingSplashScreen(){
       
@@ -112,7 +122,6 @@ public class BrainDead{
      
      }//end of EndingSplashScreen method
       
-    }
     
     
   }
