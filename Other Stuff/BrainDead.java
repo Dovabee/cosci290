@@ -14,6 +14,13 @@ public class BrainDead{
     //calling StartingSplashScreen
     StartingSplashScreen();
     intro();
+    System.out.println("You got 2 hours to KILL. What do you want to do?");
+    
+    //Space added here. Will now add spacing to make the game look more aesthitic
+    System.out.println(" ");
+    
+    //Gameplay starts
+    System.out.println("Eat breakfast or head to the docks? ");
     response = input.next();
     action = input.next();
     Scene1(response, action);
@@ -125,17 +132,6 @@ public class BrainDead{
     
     
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

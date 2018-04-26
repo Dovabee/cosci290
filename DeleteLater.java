@@ -1,188 +1,152 @@
-/*
-
-  Francisco Delgado
-  
-  Co Sci 290
-  
-  Do two problems (do these problems look familiar?):
-
-  *6.2 (Sum the digits in an integer)
-
-  Write a method that computes the sum of the digits in an integer. Use the following method header:
-
-  public static int sumDigits(int n)
-
-  Max digit size of n is 3.
-
-  For example, sumDigits(234) returns 9 (2 + 3 + 4). (Hint: Use the % operator to extract digits, and the / operator to remove the
-                                                      extracted digit. For instance, to extract 4 from 234, use 234 % 10 (= 4). 
-                                                      To remove 4 from 234, use 234 / 10 (= 23). 
-
- 
-  
-  *6.5 (Sort three numbers)
-
-  Write a method with the following header to display three numbers in increasing order:
-
-  public static void displaySortedNumbers( double num1, double num2, double num3)
-
- 
-
-  Plus 2 points if done by the end of class, otherwise, due by 04/26/18 at 1:30PM.
-  
-*/
-
-//import Scanner from java.util package
+//importing Scanner package
 import java.util.Scanner;
 
+//Braindead
 public class DeleteLater{
-  
-  //start of program
+
+//Application... START!!
   public static void main(String[] args){
+   
+    Scanner input = new Scanner(System.in); //Scanner initialized
+    String response = "";
+    String action = "";
     
-    Scanner input = new Scanner(System.in);
+    //calling StartingSplashScreen
+    StartingSplashScreen();
+    intro();
+    response = input.next();
+    action = input.next();
+    Scene1(response, action);
+    //Scene2();
+    EndingSplashScreen();
+      
+  }//end of main
+        
+  //starting splash screen method  
+  public static void StartingSplashScreen(){
     
-    //variable declarations
-    int num = 0;
-    int n = num;
-    int nextnum;
-    //double nextnum;
+        //splash screen
+        System.out.println("  :::====  :::====  :::====  ::: :::= === :::====  :::===== :::====  :::====  \n "
+                          + " :::  === :::  === :::  === ::: :::===== :::  === :::      :::  === :::  === \n "
+                          + " =======  =======  ======== === ======== ===  === ======   ======== ===  === \n "
+                          + " ===  === === ===  ===  === === === ==== ===  === ===      ===  === ===  === \n "
+                          + " =======  ===  === ===  === === ===  === =======  ======== ===  === =======  \n ");
     
-    //prompt user to enter an integer (max 3 digits allowed)
-    System.out.println("Enter an integer (max of 3 digits allowed): ");
+    }//end of StartingSplashScreen method
+  
+  //intro method
+  public static void intro(){
     
-    System.out.println("The sum of the digits in the integer is " + sumDigits(n) + ".");
+    //intro
+    System.out.println("Last Night you went to a huge mansion party on Catalina Island. You just woke up from raging it the night before. ");
+    System.out.println("You remembered you have to catch the boat back home in the morning. It's 8:00 a.m. You got 2 hours to make it ");
+    System.out.println("to the docks. You're not worried, the docks are only 5 miles away. You figure a Uber will get you there ");
+    System.out.println("in 10 min. You have time. But little did you know Everyone was drugged on the island except you. They are all");
+    System.out.println("Branded Zombies with a hunger for your flesh ");
+    System.out.println("What do you do? ");
+    System.out.println("How will you survive? ");
+    
+  }//end of intro method
+  
+  //Scene 1 method
+  public static void Scene1(String response, String action){
+  
+    System.out.println("You got 2 hours to KILL. What do you want to do?");
+    
+    //Space added here. Will now add spacing to make the game look more aesthitic
+    System.out.println(" ");
+    
+    //Gameplay starts
+    System.out.println("Eat breakfast or head to the docks? ");
     
     System.out.println(" ");
     
-    System.out.println("Enter another integer (max of 3 digits allowed): ");
-    
-    //nextnum = input.nextDouble();
-    
-    //System.out.println(displaySortedNumbers(nextnum));
-    
-    //System.out.println(displaySortedNumbers());
-    
-  }//end of main
+    //Player gives response to question
+    //response = input.next();
   
-  //This method finds the sum of all the digits in a number (max 3 digits).
-  public static int sumDigits(int n){
-    
-    //initializing Scanner for sumDigits method
-    Scanner input = new Scanner(System.in);
-    
-    //variable declarations
-    int lastdigit;
-    int middledigit;
-    int firstdigit;
-    int quotient;
-    int num = 0;
-    int sum = 0;
-    
-    num = input.nextInt();
-    
-    //last digit isolated
-    lastdigit = num % 10;
-       
-    //middle digit and last digit now == quotient
-    quotient = num / 10;
-    
-    //middle digit isolated
-    middledigit = quotient % 10;
-    
-    //first digit isolated
-    firstdigit = quotient / 10;
-    
-    //Calculate the total sum of the digits
-    sum = lastdigit + middledigit + firstdigit;
-    
-    return sum;
-    
-  }//end of sumDigits
-  
-  /*
-  
-    BEGINNING PROBLEM 6.5
-    
-  */
-  
-  public static void displaySortedNumbers( double num1, double num2, double num3){
-    
-    //initializing Scanner for displaySortedNumbers method
-    Scanner input = new Scanner(System.in);
-    
-    //variable declarations
-    int Lastdigit;
-    int Middledigit;
-    int Firstdigit;
-    int quotient2;
-    int nextnum = 0;
-    //double order;
-    
-    nextnum = input.nextInt();
-    
-    //nextnum = input.nextInt();
-    
-    //last digit isolated
-    Lastdigit = nextnum % 10;
-       
-    //middle digit and last digit now == quotient
-    quotient2 = nextnum / 10;
-    
-    //middle digit isolated
-    Middledigit = quotient2 % 10;
-    
-    //first digit isolated
-    Firstdigit = quotient2 / 10;
-    
-    //If num1 is less than both the secondmum and num3, then this if will be executed
-    if (num1 < num2 && num1 < num3){
-      if (num2 > num3){
-        System.out.println(num1 + " " + num3 + " " + num2);
-      }else if (num3 > num2){
-        System.out.println(num1 + " " + num2 + " " + num3);
+    if((response.toLowerCase()).equals("breakfast")){
+      System.out.println("Let's go downstairs to the kitchen.");
+      
+      System.out.println(" ");
+      
+      System.out.println("As you walk to the kitchen, you notice everyone is dead. You freak out " +
+                         "and run outside");
+      System.out.println("You try and look for help, but you notice there are braindead zombies everywhere! ");
+      System.out.println("Time to make a move ");
+      
+      System.out.println(" ");
+      
+      System.out.println("Run or call for help? ");
+      
+      //Player decides either to run or call for help
+      //action = input.next();
+      
+      //1st nested if and else if
+      if((action.toLowerCase()).equals("run")){
+        System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
       }
-        }
-    
-    //If num2 is less than both the secondmum and num3, then this if will be executed
-    if (num2 < num1 && num2 < num3){
-      if (num1 > num3){
-        System.out.println(num2 + " " + num3 + " " + num1);
-      }else if (num3 > num1){
-        System.out.println(num2 + " " + num1 + " " + num3);
+      else if((action.toLowerCase()).equals("call")){
+        System.out.println("GREAT... the phone isn't working! RUN ");
       }
-        }
+      
+    }
+    else if((response.toLowerCase()).equals("docks")){
+      
+      System.out.println(" ");
+      
+      System.out.println("You take out your phone and call an Uber");
+      
+      System.out.println(" ");
+      
+      System.out.println("You patiently wait for the Uber to come no matter how long it takes because "
+                       + "you don't want to pay the cancellation fee.");
+      
+       System.out.println("You eventually die of thirst. The end! ");
+    }
+                        
+      else{
+      System.out.println("I don't understand that ");//remember to add loop later
+    }
     
-    //If "num3" is less than both the num1 and num2, then this if will be executed
-    if (num3 < num1 && num3 < num2){
-      if (num1 > num2){
-        System.out.println(num3 + " " + num2 + " " + num1);
-      }else if (num2 > num1){
-        System.out.println(num3 + " " + num1 + " " + num2);
-      }
-        }
+  }//end of Scene1 method
+      
+     public static void EndingSplashScreen(){
+      
+      System.out.println("  ____    ______           ____        _____   __  __  ____    ____    __                                      \n"
+                      + " /\\  _`\\ /\\  _  \\  /'\\_/`\\/\\  _`\\     /\\  __`\\/\\ \\/\\ \\/\\  _`\\ /\\  _`\\ /\\ \\                      \n"
+                      + " \\ \\ \\L\\_\\ \\ \\L\\ \\/\\      \\ \\ \\L\\_\\   \\ \\ \\/\\ \\ \\ \\ \\ \\ \\ \\L\\_\\ \\ \\L\\ \\ \\ \\        \n"
+                      + "  \\ \\ \\L_L\\ \\  __ \\ \\ \\__\\ \\ \\  _\\L    \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  _\\L\\ \\ ,  /\\ \\ \\            \n"
+                      + "   \\ \\ \\/, \\ \\ \\/\\ \\ \\ \\_/\\ \\ \\ \\L\\ \\   \\ \\ \\_\\ \\ \\ \\_/ \\ \\ \\L\\ \\ \\ \\\\ \\\\ \\_\\    \n"
+                      + "    \\ \\____/\\ \\_\\ \\_\\ \\_\\\\ \\_\\ \\____/    \\ \\_____\\ `\\___/\\ \\____/\\ \\_\\ \\_\\/\\_\\            \n"
+                      + "     \\/___/  \\/_/\\/_/\\/_/ \\/_/\\/___/      \\/_____/`\\/__/  \\/___/  \\/_/\\/ /\\/_/                          \n");
+     
+     }//end of EndingSplashScreen method
+      
     
-  }//end of displaySortedNumbers
-  
-}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
