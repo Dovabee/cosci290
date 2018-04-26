@@ -58,6 +58,7 @@ public class BrainDead{
   //Scene 1 method
   public static void Scene1(String response, String action){
   
+  /*
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
     //Space added here. Will now add spacing to make the game look more aesthitic
@@ -67,6 +68,7 @@ public class BrainDead{
     System.out.println("Eat breakfast or head to the docks? ");
     
     System.out.println(" ");
+  */
     
     //Player gives response to question
     //response = input.next();
@@ -132,21 +134,6 @@ public class BrainDead{
     
     
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
