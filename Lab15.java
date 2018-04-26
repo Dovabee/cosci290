@@ -47,6 +47,9 @@ public class Lab15{
     int n = num;
     //int nextnum;
     double nextnum;
+    int one;
+    int two;
+    int three;
     
     //prompt user to enter an integer (max 3 digits allowed)
     System.out.println("Enter an integer (max of 3 digits allowed): ");
@@ -57,14 +60,23 @@ public class Lab15{
     
     System.out.println("Enter another integer (max of 3 digits allowed): ");
     
-    //nextnum = input.nextInt();
-    nextnum = input.nextDouble();
+    //prompt user to enter three inteers
+    System.out.println("Enter three integers: ");
+      one = input.nextInt();
+      two = input.nextInt();
+      three = input.nextInt();
     
-    System.out.println(displaySortedNumbers(nextnum));
+    System.out.println(" ");
     
-    //System.out.println(displaySortedNumbers());
+    displaySortedNumbers(one, two, three);
     
   }//end of main
+  
+  /*
+  
+    BEGINNING PROBLEM 6.2
+  
+  */
   
   //This method finds the sum of all the digits in a number (max 3 digits).
   public static int sumDigits(int n){
@@ -107,64 +119,40 @@ public class Lab15{
     
   */
   
-  public static void displaySortedNumbers( double num1, double num2, double num3){
+  //start of application
+  public static void displaySortedNumbers(double firstnum, double secondnum, double thirdnum){
     
-    //initializing Scanner for displaySortedNumbers method
-    Scanner input = new Scanner(System.in);
+    System.out.println(" ");
     
-    //variable declarations
-    int Lastdigit;
-    int Middledigit;
-    int Firstdigit;
-    int quotient2;
-    int nextnum = 0;
-    //double order;
-    
-    //nextnum = input.nextInt();
-    
-    //last digit isolated
-    Lastdigit = nextnum % 10;
-       
-    //middle digit and last digit now == quotient
-    quotient2 = nextnum / 10;
-    
-    //middle digit isolated
-    Middledigit = quotient2 % 10;
-    
-    //first digit isolated
-    Firstdigit = quotient2 / 10;
-    
-    //If num1 is less than both the secondmum and num3, then this if will be executed
-    if (num1 < num2 && num1 < num3){
-      if (num2 > num3){
-        System.out.println(num1 + " " + num3 + " " + num2);
-      }else if (num3 > num2){
-        System.out.println(num1 + " " + num2 + " " + num3);
+    //If firstnum is less than both the secondmum and thirdnum, then this if will be executed
+    if (firstnum < secondnum && firstnum < thirdnum){
+      if (secondnum > thirdnum){
+        System.out.println(firstnum + " " + thirdnum + " " + secondnum);
+      }else if (thirdnum > secondnum){
+        System.out.println(firstnum + " " + secondnum + " " + thirdnum);
       }
         }
     
-    //If num2 is less than both the secondmum and num3, then this if will be executed
-    if (num2 < num1 && num2 < num3){
-      if (num1 > num3){
-        System.out.println(num2 + " " + num3 + " " + num1);
-      }else if (num3 > num1){
-        System.out.println(num2 + " " + num1 + " " + num3);
+    //If secondnum is less than both the secondmum and thirdnum, then this if will be executed
+    if (secondnum < firstnum && secondnum < thirdnum){
+      if (firstnum > thirdnum){
+        System.out.println(secondnum + " " + thirdnum + " " + firstnum);
+      }else if (thirdnum > firstnum){
+        System.out.println(secondnum + " " + firstnum + " " + thirdnum);
       }
         }
     
-    //If "num3" is less than both the num1 and num2, then this if will be executed
-    if (num3 < num1 && num3 < num2){
-      if (num1 > num2){
-        System.out.println(num3 + " " + num2 + " " + num1);
-      }else if (num2 > num1){
-        System.out.println(num3 + " " + num1 + " " + num2);
+    //If "thirdnum" is less than both the firstnum and secondnum, then this if will be executed
+    if (thirdnum < firstnum && thirdnum < secondnum){
+      if (firstnum > secondnum){
+        System.out.println(thirdnum + " " + secondnum + " " + firstnum);
+      }else if (secondnum > firstnum){
+        System.out.println(thirdnum + " " + firstnum + " " + secondnum);
       }
         }
     
-  }//end of displaySortedNumbers
-  
+  }
 }
-
 /*
 
   USING A DIFFERENT METHOD
