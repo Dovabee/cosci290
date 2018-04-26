@@ -35,7 +35,7 @@
 //import Scanner from java.util package
 import java.util.Scanner;
 
-public class Lab15{
+public class DeleteLater{
   
   //start of program
   public static void main(String[] args){
@@ -45,8 +45,8 @@ public class Lab15{
     //variable declarations
     int num = 0;
     int n = num;
-    //int nextnum;
-    double nextnum;
+    int nextnum;
+    //double nextnum;
     
     //prompt user to enter an integer (max 3 digits allowed)
     System.out.println("Enter an integer (max of 3 digits allowed): ");
@@ -57,10 +57,9 @@ public class Lab15{
     
     System.out.println("Enter another integer (max of 3 digits allowed): ");
     
-    //nextnum = input.nextInt();
-    nextnum = input.nextDouble();
+    //nextnum = input.nextDouble();
     
-    System.out.println(displaySortedNumbers(nextnum));
+    //System.out.println(displaySortedNumbers(nextnum));
     
     //System.out.println(displaySortedNumbers());
     
@@ -120,6 +119,8 @@ public class Lab15{
     int nextnum = 0;
     //double order;
     
+    nextnum = input.nextInt();
+    
     //nextnum = input.nextInt();
     
     //last digit isolated
@@ -164,152 +165,70 @@ public class Lab15{
   }//end of displaySortedNumbers
   
 }
-
-/*
-
-  USING A DIFFERENT METHOD
-
-  //import Scanner from java.util package
-import java.util.Scanner;
-
-//class
-public class Lab9{
   
-  //start of program execution
-  public static void main(String[] args){
-    
-    //initializing Scanner
-    Scanner input = new Scanner(System.in);
-    
-    //variable declarations
-    int lastdigit;
-    int middledigit;
-    int firstdigit;
-    int quotient;
-    int num;
-    int sum;
-    
-    //prompt user to enter an integer. Max number of digits possible to input is 3.
-    System.out.println("Enter a number between 0 and 1000: ");
-      num = input.nextInt();
-    
-    //last digit isolated
-    lastdigit = num % 10; 
-       
-    //middle digit and last digit now == quotient
-    quotient = num / 10;
-    
-    //middle digit isolated
-    middledigit = quotient % 10;
-    
-    //first digit isolated
-    firstdigit = quotient / 10;
-    
-    //Calculate the total sum of the digits
-    sum = firstdigit + middledigit + lastdigit;
-    
-    System.out.println(" ");
-    
-    //Display results
-    System.out.println("The sum of all the digits is " + sum);
-    
-    System.out.println(" ");
-    
-    
-    
-  }
-}
-*/
-
-/*
-  //This method finds the sum of all the digits in a number (max 3 digits).
-  public static int sumDigits(int n){
-    
-    //variable declarations
-    int lastdigit;
-    int middledigit;
-    int firstdigit;
-    int quotient;
-    int num;
-    int sum;
-    
-    //prompt user to enter an integer. Max number of digits possible to input is 3.
-    System.out.println("Enter a number between 0 and 1000: ");
-      num = input.nextInt();
-    
-    //last digit isolated
-    lastdigit = num % 10; 
-       
-    //middle digit and last digit now == quotient
-    quotient = num / 10;
-    
-    //middle digit isolated
-    middledigit = quotient % 10;
-    
-    //first digit isolated
-    firstdigit = quotient / 10;
-    
-    //Calculate the total sum of the digits
-    sum = firstdigit + middledigit + lastdigit;
-    
-    System.out.println(" ");
-    
-    //Display results
-    System.out.println("The sum of all the digits is " + sum);
-    
-    System.out.println(" ");
-*/
-
-/*
-  //declare variables
-    int num = 0;
-    int n = num;
-    
-    //prompt user to enter an integer (max 3 digits allowed)
-    System.out.println("Enter an integer (max of 3 digits allowed): ");
-    
-    System.out.println("The sum of the digits in number " + num + " is " + sumDigits(n) + ".");
-    
-    num always ends up being 0. I have no idea how to fix it right now
-    
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
