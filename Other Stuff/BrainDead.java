@@ -10,7 +10,18 @@ public class BrainDead{
     Scanner input = new Scanner(System.in); //Scanner initialized
     String response = "";
     String action = "";
+    
+    //calling StartingSplashScreen
+    StartingSplashScreen();
+    intro();
+    Scene1();
+    //Scene2();
+    EndingSplashScreen();
+      
+  }//end of main
         
+    public static void StartingSplashScreen(){
+    
         //splash screen
         System.out.println("  :::====  :::====  :::====  ::: :::= === :::====  :::===== :::====  :::====  \n "
                           + " :::  === :::  === :::  === ::: :::===== :::  === :::      :::  === :::  === \n "
@@ -18,8 +29,21 @@ public class BrainDead{
                           + " ===  === === ===  ===  === === === ==== ===  === ===      ===  === ===  === \n "
                           + " =======  ===  === ===  === === ===  === =======  ======== ===  === =======  \n ");
     
+    }//end of StartingSplashScreen method
+  
+  //using  
+  public static void intro(){
     
-    //Finish intro later
+    //intro
+    System.out.println("Last Night you went to a huge mansion party on Catalina Island. You just woke up from raging it the night before. ");
+    System.out.println("You remembered you have to catch the boat back home in the morning. It's 8:00 a.m. You got 2 hours to make it ");
+    System.out.println("to the docks. You're not worried, the docks are only 5 miles away. You figure a Uber will get you there ");
+    System.out.println("in 10 min. You have time. But little did you know Everyone was drugged on the island except you. They are all");
+    System.out.println("Branded Zombies with a hunger for your flesh ");
+    System.out.println("What do you do? ");
+    System.out.println("How will you survive? ");
+  }
+  
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
     //Space added here. Will now add spacing to make the game look more aesthitic
@@ -72,27 +96,26 @@ public class BrainDead{
       
        System.out.println("You eventually die of thirst. The end! ");
                         
+      else{
+      System.out.println("I don't understand that ");//remember to add loop later
+    }
       
-     System.out.println("  ____    ______           ____        _____   __  __  ____    ____    __                                      \n"
+     public static void EndingSplashScreen(){
+      
+      System.out.println("  ____    ______           ____        _____   __  __  ____    ____    __                                      \n"
                       + " /\\  _`\\ /\\  _  \\  /'\\_/`\\/\\  _`\\     /\\  __`\\/\\ \\/\\ \\/\\  _`\\ /\\  _`\\ /\\ \\                      \n"
                       + " \\ \\ \\L\\_\\ \\ \\L\\ \\/\\      \\ \\ \\L\\_\\   \\ \\ \\/\\ \\ \\ \\ \\ \\ \\ \\L\\_\\ \\ \\L\\ \\ \\ \\        \n"
                       + "  \\ \\ \\L_L\\ \\  __ \\ \\ \\__\\ \\ \\  _\\L    \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  _\\L\\ \\ ,  /\\ \\ \\            \n"
                       + "   \\ \\ \\/, \\ \\ \\/\\ \\ \\ \\_/\\ \\ \\ \\L\\ \\   \\ \\ \\_\\ \\ \\ \\_/ \\ \\ \\L\\ \\ \\ \\\\ \\\\ \\_\\    \n"
                       + "    \\ \\____/\\ \\_\\ \\_\\ \\_\\\\ \\_\\ \\____/    \\ \\_____\\ `\\___/\\ \\____/\\ \\_\\ \\_\\/\\_\\            \n"
                       + "     \\/___/  \\/_/\\/_/\\/_/ \\/_/\\/___/      \\/_____/`\\/__/  \\/___/  \\/_/\\/ /\\/_/                          \n");
+     
+     }//end of EndingSplashScreen method
+      
     }
-    else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
     
     
-    
-    
-  
-    }
   }
-
-//splash screen
 
 
 
