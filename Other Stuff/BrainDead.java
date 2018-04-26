@@ -16,7 +16,7 @@ public class BrainDead{
     intro();
     response = input.next();
     action = input.next();
-    Scene1();
+    Scene1(response, action);
     //Scene2();
     EndingSplashScreen();
       
@@ -49,7 +49,7 @@ public class BrainDead{
   }//end of intro method
   
   //Scene 1 method
-  public static void Scene1(){
+  public static void Scene1(String response, String action){
   
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
