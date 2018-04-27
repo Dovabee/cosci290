@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 //Braindead
-public class DeleteLater{
+public class BrainDead{
 
 //Application... START!!
   public static void main(String[] args){
@@ -14,16 +14,9 @@ public class DeleteLater{
     //calling StartingSplashScreen
     StartingSplashScreen();
     intro();
-    System.out.println("You got 2 hours to KILL. What do you want to do?");
-    
-    //Space added here. Will now add spacing to make the game look more aesthitic
-    System.out.println(" ");
-    
-    //Gameplay starts
-    System.out.println("Eat breakfast or head to the docks? ");
     response = input.next();
-    action = input.next();
     Scene1(response, action);
+    action = input.next();
     //Scene2();
     EndingSplashScreen();
       
@@ -57,22 +50,21 @@ public class DeleteLater{
   
   //Scene 1 method
   public static void Scene1(String response, String action){
-  
-    /*
-      System.out.println("You got 2 hours to KILL. What do you want to do?");
+
+    System.out.println("You got 2 hours to KILL. What do you want to do?");
     
-      //Space added here. Will now add spacing to make the game look more aesthitic
-      System.out.println(" ");
+    //Space added here. Will now add spacing to make the game look more aesthitic
+    System.out.println(" ");
     
-      //Gameplay starts
-      System.out.println("Eat breakfast or head to the docks? ");
+    //Gameplay starts
+    System.out.println("Eat breakfast or head to the docks? ");
     
-      System.out.println(" ");
-    */
+    System.out.println(" ");
     
     //Player gives response to question
     //response = input.next();
   
+    //First "if"
     if((response.toLowerCase()).equals("breakfast")){
       System.out.println("Let's go downstairs to the kitchen.");
       
@@ -87,10 +79,14 @@ public class DeleteLater{
       
       System.out.println("Run or call for help? ");
       
+      else if((response.toLowerCase()).equals()
+    
+    }//end of first "if"
+      
       //Player decides either to run or call for help
       //action = input.next();
       
-      //first nested if and else if
+      //1st nested if and else if
       if((action.toLowerCase()).equals("run")){
         System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
       }
@@ -98,7 +94,6 @@ public class DeleteLater{
         System.out.println("GREAT... the phone isn't working! RUN ");
       }
       
-    }
     else if((response.toLowerCase()).equals("docks")){
       
       System.out.println(" ");
@@ -134,30 +129,6 @@ public class DeleteLater{
     
     
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,3 +1,5 @@
+//Note: THIS IS THE STARTING POINT!!!!
+
 //importing Scanner package
 import java.util.Scanner;
 
@@ -58,17 +60,17 @@ public class BrainDead{
   //Scene 1 method
   public static void Scene1(String response, String action){
   
-  /*
-    System.out.println("You got 2 hours to KILL. What do you want to do?");
+    /*
+      System.out.println("You got 2 hours to KILL. What do you want to do?");
     
-    //Space added here. Will now add spacing to make the game look more aesthitic
-    System.out.println(" ");
+      //Space added here. Will now add spacing to make the game look more aesthitic
+      System.out.println(" ");
     
-    //Gameplay starts
-    System.out.println("Eat breakfast or head to the docks? ");
+      //Gameplay starts
+      System.out.println("Eat breakfast or head to the docks? ");
     
-    System.out.println(" ");
-  */
+      System.out.println(" ");
+    */
     
     //Player gives response to question
     //response = input.next();
@@ -90,7 +92,7 @@ public class BrainDead{
       //Player decides either to run or call for help
       //action = input.next();
       
-      //1st nested if and else if
+      //first nested if and else if
       if((action.toLowerCase()).equals("run")){
         System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
       }
@@ -134,53 +136,3 @@ public class BrainDead{
     
     
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
