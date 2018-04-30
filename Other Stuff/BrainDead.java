@@ -24,8 +24,8 @@ public class BrainDead{
     //Gameplay starts
     System.out.println("Eat breakfast or head to the docks? ");
     response = input.next();
-    action = input.next();
     Scene1(response, action);
+    action = input.next();
     //Scene2();
     EndingSplashScreen();
       
