@@ -13,20 +13,20 @@ public class BrainDead{
     String response = "";
     String action = "";
     
-    //calling StartingSplashScreen
+    //Gameplay starts
     StartingSplashScreen();
     intro();
+    
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
     //Space added here. Will now add spacing to make the game look more aesthitic
     System.out.println(" ");
     
-    //Gameplay starts
     System.out.println("Eat breakfast or head to the docks? ");
     response = input.next();
-    Scene1(response, action);
+    Scene1(response);
     action = input.next();
-    //Scene2();
+    Scene2(action);
     EndingSplashScreen();
       
   }//end of main
@@ -43,7 +43,7 @@ public class BrainDead{
     
     }//end of StartingSplashScreen method
   
-  //intro method
+  //start intro method
   public static void intro(){
     
     //intro
@@ -57,8 +57,8 @@ public class BrainDead{
     
   }//end of intro method
   
-  //Scene 1 method
-  public static void Scene1(String response, String action){
+  //start of Scene 1 method
+  public static void Scene1(String response){
   
     /*
       System.out.println("You got 2 hours to KILL. What do you want to do?");
@@ -86,21 +86,8 @@ public class BrainDead{
       System.out.println("Time to make a move ");
       
       System.out.println(" ");
-      
-      System.out.println("Run or call for help? ");
-      
-      //Player decides either to run or call for help
-      //action = input.next();
-      
-      //first nested if and else if
-      if((action.toLowerCase()).equals("run")){
-        System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
-      }
-      else if((action.toLowerCase()).equals("call")){
-        System.out.println("GREAT... the phone isn't working! RUN ");
-      }
-      
     }
+    
     else if((response.toLowerCase()).equals("docks")){
       
       System.out.println(" ");
@@ -112,14 +99,42 @@ public class BrainDead{
       System.out.println("You patiently wait for the Uber to come no matter how long it takes because "
                        + "you don't want to pay the cancellation fee.");
       
-       System.out.println("You eventually die of thirst. The end! ");
+      System.out.println("You eventually die of thirst. The end! ");
+        
+      //GAME OVER!
+      EndingSplashScreen();
+      System.exit(0);
     }
-                        
+      else{
+      System.out.println("I don't understand that ");//remember to add loop later
+    }
+      
+      
+      
+      //THIS QUESTION LEADS TO SCENE 2 METHOD
+      System.out.println("Run or call for help? ");
+    
+  }//end of Scene1 method
+      
+  /*
+      Player decides either to run or call for help
+      action = input.next();
+  */
+      
+  //start of Scene2 method
+  public static void Scene2(String action){
+    
+      if((action.toLowerCase()).equals("run")){
+        System.out.println("You run inside the mansion, find a room for safety, and lock the door. ");
+      }
+      else if((action.toLowerCase()).equals("call")){
+        System.out.println("GREAT... the phone isn't working! RUN ");
+      }
       else{
       System.out.println("I don't understand that ");//remember to add loop later
     }
     
-  }//end of Scene1 method
+}//end of Scene2 method
       
      public static void EndingSplashScreen(){
       
