@@ -14,7 +14,7 @@
   Write a program that reads an integer and displays all its smallest factors in increasing order.
   For example, if the input integer is 120, the output should be as follows: 2, 2, 2, 3 , 5 
 */
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Lab18{
   
@@ -54,22 +54,35 @@ public class Lab18{
     
     */
     
+    
+    
     //Declared variables
     //final int NumOfPrimes = 11;
     //final int PrimesPerLine = 10;
     //int count = 0; //count the number of prime numbers
     //int number = 2; //
+    /*
     int number;
+    int FirstFactor;
     
     //prompt user to enter an integer
     System.out.println("Enter an integer: ");
-    number = input.nextInt;
+    number = input.nextInt();
     
-    //example: find the factors of 18
-    if(number % 2 == 0){
-    System.out.println(" ");
+    //example: find the factors of 4
+    while(number % 2 == 0){
+      
+      FirstFactor = number / 2;
+      
+      System.out.println("The factors of this numbers are: " + FirstFactor + " " + number);
     
     }
+    */
+    
+    //Declared variable
+    int factor = 2;
+    
+    
     
     
   }//end of main
