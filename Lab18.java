@@ -47,6 +47,7 @@ public class Lab18{
     //END OF PROBLEM 5.10
     System.out.println(" ");
     System.out.println("End of problem 5.10 ");
+    System.out.println(" ");
     
     /*
     
@@ -79,8 +80,23 @@ public class Lab18{
     }
     */
     
-    //Declared variable
-    int factor = 2;
+    //Declared variables
+    int num;
+    
+    //prompt user to enter an integer
+    System.out.println("Enter an integer: ");
+    num = input.nextInt();
+    
+    for(int factor = 1; num % factor != 0;factor++){
+      
+      counter++;
+      System.out.println(factor + " ");
+      
+      if(counter % 5 == 0){
+        System.out.println();
+      }
+      
+    }//end of for loop
     
     
     
