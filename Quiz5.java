@@ -25,7 +25,7 @@ public class Quiz5{
     for(int i = 0; i < 9;i++){
       
       //testing to find a vowel
-      if(name.charAt(i) == 'a' || name.charAt(i) == 'i'){ //I can use or statements like: if(name.charAt(i) == 'a' || name.charAt(i) == 'i')
+      if(name.charAt(i) == 'a' || name.charAt(i) == 'e' || name.charAt(i) == 'i' || name.charAt(i) == 'o' || name.charAt(i) == 'u'){ //I can use or statements like: if(name.charAt(i) == 'a' || name.charAt(i) == 'i')
         counter++;
       }
     
