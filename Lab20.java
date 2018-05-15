@@ -14,9 +14,10 @@ public class Lab20{
   //Start of program
   public static void main(String[] args){
     
+    //declare an array of strings
     String[] words = new String[5];
       //{0, 0, 0, 0, 0} <== there are 5 values
-      // 0  1  2  3  4  <== the starting index is zero. The max index is 4
+      // 0  1  2  3  4  <== There are 5 indexes. The starting index is zero. The max index is 4
       
       //assign a value inside this array called words
       words[0] = "cat";
@@ -25,7 +26,7 @@ public class Lab20{
       words[3] = "squirrel";
       words[4] = "rat";
     
-    //use for loop to iterate the array
+    //use a for loop to iterate the array
     for(int i = 0; i < 5; i++){
       
       System.out.println(words[i] + " ");
