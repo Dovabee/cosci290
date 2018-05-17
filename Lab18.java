@@ -61,21 +61,18 @@ public class Lab18{
     
     //Declared variables
     int num;
-    int counter2 = 1;
+    int counter2 = 2;
     
     //prompt user to enter an integer
     System.out.println("Enter an integer: ");
     num = input.nextInt();
     
-    for(int i = 1; i <= 100; i++){
+    for(int i = 2; i <= 100; i++){
       
       if(num % i == 0){
         counter2++;
         
       System.out.print(i + " ");
-      }
-      if(counter2 % 5 == 0){
-        System.out.println();
       }
       
       //System.out.println("The factor(s) of " + num + " is: " + i + ".");
