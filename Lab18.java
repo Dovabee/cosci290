@@ -61,16 +61,16 @@ public class Lab18{
     
     //Declared variables
     int num;
-    int counter2 = 2;
+    int i = 2;
     
     //prompt user to enter an integer
     System.out.println("Enter an integer: ");
     num = input.nextInt();
     
-    for(int i = 2; i <= 100; i++){
+    for(int i = 2; i <= num / 2; i++){
       
       if(num % i == 0){
-        counter2++;
+        i++;
         
       System.out.print(i + " ");
       }
