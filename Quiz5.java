@@ -32,7 +32,7 @@ public class Quiz5{
     }//end of for loop
     
     
-        System.out.println("There are " + counter + " vowels in the name " + name + ".");
+        //System.out.println("There are " + counter + " vowels in the name " + name + ".");
     
     
   }//end of main

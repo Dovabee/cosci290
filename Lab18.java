@@ -52,49 +52,35 @@ public class Lab18{
     /*
     
       BEGINNING PROBLEM 5.16
+      ----------------------
+      5.16 (Find the factors of an integer)
+      Write a program that reads an integer and displays all its smallest factors in increasing order.
+      For example, if the input integer is 120, the output should be as follows: 2, 2, 2, 3 , 5 
     
-    */
-    
-    
-    
-    //Declared variables
-    //final int NumOfPrimes = 11;
-    //final int PrimesPerLine = 10;
-    //int count = 0; //count the number of prime numbers
-    //int number = 2; //
-    /*
-    int number;
-    int FirstFactor;
-    
-    //prompt user to enter an integer
-    System.out.println("Enter an integer: ");
-    number = input.nextInt();
-    
-    //example: find the factors of 4
-    while(number % 2 == 0){
-      
-      FirstFactor = number / 2;
-      
-      System.out.println("The factors of this numbers are: " + FirstFactor + " " + number);
-    
-    }
     */
     
     //Declared variables
     int num;
+    int counter2 = 1;
     
     //prompt user to enter an integer
     System.out.println("Enter an integer: ");
     num = input.nextInt();
     
-    for(int factor = 1; num % factor != 0;factor++){
+    for(int i = 1; i <= 100; i++){
       
-      counter++;
-      System.out.println(factor + " ");
-      
-      if(counter % 5 == 0){
+      if(num % i == 0){
+        counter2++;
+        
+      System.out.print(i + " ");
+      }
+      if(counter2 % 5 == 0){
         System.out.println();
       }
+      
+      //System.out.println("The factor(s) of " + num + " is: " + i + ".");
+      
+      //System.out.println("The factors of the number " + num + " is " + i + ".");
       
     }//end of for loop
     
@@ -104,11 +90,47 @@ public class Lab18{
   }//end of main
 }//end of class
 
+      //counter++;
+      //System.out.println(factor + " ");
 
 
+    
+    
+    /*
+      //Declared variables
+      //final int NumOfPrimes = 11;
+      //final int PrimesPerLine = 10;
+      //int count = 0; //count the number of prime numbers
+      //int number = 2; //
+      /*
+      int number;
+      int FirstFactor;
+
+      //prompt user to enter an integer
+      System.out.println("Enter an integer: ");
+      number = input.nextInt();
+
+      //example: find the factors of 4
+      while(number % 2 == 0){
+
+        FirstFactor = number / 2;
+
+        System.out.println("The factors of this numbers are: " + FirstFactor + " " + number);
+
+       }
+     */
 
 
+    /*
+      for(int factor = 1; num % factor != 0;factor++){
 
+        counter++;
+        System.out.println(factor + " ");
+
+        if(counter % 5 == 0){
+          System.out.println();
+        }
+    */
 
 
 
