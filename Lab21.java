@@ -73,55 +73,64 @@ public class Lab21{
         Write a test program that prompts the user to enter ten numbers, invokes the method to reverse the numbers, and displays the numbers.
     */
     
-    ReverseArray();
+    //ReverseArray();
     
-    //starting ReverseArray method
-    public static int ReverseArray(){
+    //declare variables
+    int firstnum;
+    int secondnum;
+    int thirdnum;
+    int fourthnum;
+    int fifthnum;
+    int sixthnum;
+    int seventhnum;
+    int eigthnum;
+    int ninthnum;
+    int tenthnum;
+       
+    //prompt user to enter 10 numbers
+    System.out.println("Enter 10 numbers: ");
+    firstnum = input.nextInt();
+    secondnum = input.nextInt();
+    thirdnum = input.nextInt();
+    fourthnum = input.nextInt();
+    fifthnum = input.nextInt();
+    sixthnum = input.nextInt();
+    seventhnum = input.nextInt();
+    eigthnum = input.nextInt();
+    ninthnum = input.nextInt();
+    tenthnum = input.nextInt();
       
-      //declare variables
-      int firstnum;
-      int secondnum;
-      int thirdnum;
-      int fourthnum;
-      int fifthnum;
-      int sixthnum;
-      int seventhnum;
-      int eigthnum;
-      int ninthnum;
-      int tenthnum;
+    //declare an array
+    int[] number = new int[10];
         
-      //prompt user to enter 10 numbers
-      System.out.println("Enter 10 numbers: ");
-      firstnum = input.nextInt();
-      secondnum = input.nextInt();
-      thirdnum = input.nextInt();
-      fourthnum = input.nextInt();
-      fifthnum = input.nextInt();
-      sixthnum = input.nextInt();
-      seventhnum = input.nextInt();
-      eigthnum = input.nextInt();
-      ninthnum = input.nextInt();
-      tenthnum = input.nextInt();
+    number[0] = firstnum;
+    number[1] = secondnum;
+    number[2] = thirdnum;
+    number[3] = fourthnum;
+    number[4] = fifthnum;
+    number[5] = sixthnum;
+    number[6] = seventhnum;
+    number[7] = eigthnum;
+    number[8] = ninthnum;
+    number[9] = tenthnum;
       
-      //declare an array
-      int[] number = new int[10]
-        
-        number[0] = firstnum;
-        number[1] = secondnum;
-        number[2] = thirdnum;
-        number[3] = fourthnum;
-        number[4] = fifthnum;
-        number[5] = sixthnum;
-        number[6] = seventhnum;
-        number[7] = eigthnum;
-        number[8] = ninthnum;
-        number[9] = tenthnum;
-      
-      System.out.println()
-        System.out.print(numbers[i] + " ");
-        
-    }//end of ReverseArray method
+    /*
+      //System.out.println();
+      System.out.print(numbers[i] + " ");
+    */
+     
+  //}//end of ReverseArray method
+  
+  //starting ReverseArray method
+    int[] ReverseArray(int[] list){
+   int[] result = new int[list.length];
     
+    for(int i = 0, j = result.length - 1; i < list.length; i++, j--){
+      result[j] = list[i];
+    }
+    return result;
+  }
+   
   }//end of class
 }//end of main
 
