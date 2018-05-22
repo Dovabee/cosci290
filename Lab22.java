@@ -36,7 +36,15 @@ public class Lab22 {
     
     System.out.println(" ");
     
-    
+    /*
+      PART B SHOULD BE EASY!!!
+      
+      REMEMBER THAT YOU CAN USE TEMP TO STORE VARIABLES!!!
+      
+      If temp1 > temp2, then temp1 will store that variable or something something...
+      
+      Study and practice this so that you can apply this here!!
+    */
     
   }//end of main
 }//end of class
