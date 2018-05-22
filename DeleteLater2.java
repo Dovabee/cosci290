@@ -33,7 +33,7 @@ public class DeleteLater2{
     
     for(int factor = 2; num % factor != 0; factor++){
       
-      if(factor % 2 == 0){
+      if(factor % num == 2){
         counter++;
       }
       

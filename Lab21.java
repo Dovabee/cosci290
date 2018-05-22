@@ -50,7 +50,6 @@ public class Lab21{
       
      //find out what this does later. You can change the conditional from "i < 100" to "i <10" in the first for loop.
     
-    /*
     for(int i = 0; i < 100; i++) {
       num = (int)(Math.random() * 10) + 0;
       System.out.println(num);
@@ -63,7 +62,6 @@ public class Lab21{
     }
     
     System.out.println(" ");
-    */
     
     /*
         BEGINNING PROBLEM 7.12
@@ -74,6 +72,8 @@ public class Lab21{
     */
     
     //ReverseArray();
+    
+    /*
     
     //declare variables
     int firstnum;
@@ -113,6 +113,8 @@ public class Lab21{
     number[7] = eigthnum;
     number[8] = ninthnum;
     number[9] = tenthnum;
+    
+    */
       
     /*
       //System.out.println();
@@ -121,6 +123,8 @@ public class Lab21{
      
   //}//end of ReverseArray method
   
+    /*
+    
   //starting ReverseArray method
     int[] ReverseArray(int[] list){
    int[] result = new int[list.length];
@@ -130,6 +134,8 @@ public class Lab21{
     }
     return result;
   }
+  
+    */
    
   }//end of class
 }//end of main
