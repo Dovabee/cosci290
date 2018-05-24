@@ -37,6 +37,47 @@ public class Lab22 {
       System.out.print(counts[i] + " ");
     }
     
+    //This for loop finds the largest element in the "counts" array.
+    int max = counts[0];
+    for(int i = 1; i < counts.length; i++) {
+      if(counts[i] > max) {
+        max = counts[i];
+      }
+    }//end of for loop
+    
+    System.out.println(" ");
+    System.out.println("The largest number is " + max + ".");
+    
+    
+    max = counts[0];
+    //declaring variable
+    int indexOfMax = 0;
+    
+    //this for loop finds the smallest element in the "counts" array.
+    for(int i = 1; i < counts.length; i++){
+      if(counts[i] < max){
+        max = counts[i];
+        indexOfMax = i;
+        System.out.println(" ");
+    System.out.println("The smallest number is " + indexOfMax + ".");
+      }
+    }//end of for loop
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //System.out.println(" ");
     
     //System.out.println("The largest number is " + num + ".");
