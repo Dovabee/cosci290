@@ -35,13 +35,11 @@ public class Lab22 {
     //find out what this does later
     for(int i = 0; i < 15; i++) {
       System.out.print(counts[i] + " ");
-      if(counts[0] > counts[1]){
-        int temp = 
-      }
     }
     
-    System.out.println(" ");
-    System.out.println("The largest number is " + num + ".");
+    //System.out.println(" ");
+    
+    //System.out.println("The largest number is " + num + ".");
     
     //This for loop is to find the largest number
     //for(int i = 0; i < 15; i++){
