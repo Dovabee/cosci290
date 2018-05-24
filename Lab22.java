@@ -21,7 +21,8 @@ public class Lab22 {
     //declare an array of ints
     int[] counts = new int[15];
     int num = 0;
-    
+    //int temp;
+    //int number1;
     
     for(int i = 0; i < 200; i++) {
       num = (0 + (int)(Math.random() * ((14 - 0) + 1)));
@@ -29,12 +30,28 @@ public class Lab22 {
       counts[num] = counts[num] + 1;
     }
     
+    System.out.println(" ");
+    
     //find out what this does later
-    for(int i = 0; i < 10; i++) {
+    for(int i = 0; i < 15; i++) {
       System.out.print(counts[i] + " ");
+      if(counts[0] > counts[1]){
+        int temp = 
+      }
     }
     
     System.out.println(" ");
+    System.out.println("The largest number is " + num + ".");
+    
+    //This for loop is to find the largest number
+    //for(int i = 0; i < 15; i++){
+      //if(counts[i] > counts);
+      //int temp = num;
+      //counter++;
+    //}
+    
+    //System.out.println("The largest number is " + num + ".");
+    
     
     /*
       PART B SHOULD BE EASY!!!
@@ -45,6 +62,17 @@ public class Lab22 {
       
       Study and practice this so that you can apply this here!!
     */
+    
+    /*
+      B. Let's analyze the data that was randomly generated (make sure to output these):
+
+      Find the number with the max
+      Find the number with the min count and display
+      Find the average of all the numbers generated
+    */
+    
+    //declare variables
+    //int 
     
   }//end of main
 }//end of class
