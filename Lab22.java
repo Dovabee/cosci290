@@ -58,12 +58,11 @@ public class Lab22 {
       if(counts[i] < min){
         min = counts[i];
         indexOfMax = i;
-        System.out.println(" ");
-    System.out.println("The smallest number is " + counts[i] + ".");
       }
     }//end of for loop
     
-    
+    System.out.println(" ");
+    System.out.println("The smallest number is " + min + ".");
     
     
     
