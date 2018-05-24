@@ -63,32 +63,8 @@ public class Lab22 {
     
     System.out.println(" ");
     System.out.println("The smallest number is " + min + ".");
+    System.out.println(" ");
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //System.out.println(" ");
-    
-    //System.out.println("The largest number is " + num + ".");
-    
-    //This for loop is to find the largest number
-    //for(int i = 0; i < 15; i++){
-      //if(counts[i] > counts);
-      //int temp = num;
-      //counter++;
-    //}
-    
-    //System.out.println("The largest number is " + num + ".");
     
     
     /*
@@ -108,9 +84,6 @@ public class Lab22 {
       Find the number with the min count and display
       Find the average of all the numbers generated
     */
-    
-    //declare variables
-    //int 
     
   }//end of main
 }//end of class
