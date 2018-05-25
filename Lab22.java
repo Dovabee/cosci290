@@ -66,19 +66,19 @@ public class Lab22 {
     System.out.println(" ");
     
     //declaring variable
-    int sum = 0;
+    //int sum = 0;
     int average = 0;
     
-    for(int i = 0; i < 15; i++){
-      sum = counts[i];
-      average = sum / 15;
-    }
+    //for(int i = 0; i < 15; i++){
+    //  sum = counts[i];
+    //  average = sum / 15;
+    //}
     
     //This code works, but I'm trying to find out how to do a loop!
-    //average = (counts[0] + counts[1] + counts[2] + counts[3] + counts[4] + counts[5] + counts[6] + counts[7] + counts[8]
-               //+ counts[9] + counts[10] + counts[11] + counts[12] + counts[13] + counts[14]) / 15;
+    average = (counts[0] + counts[1] + counts[2] + counts[3] + counts[4] + counts[5] + counts[6] + counts[7] + counts[8]
+               + counts[9] + counts[10] + counts[11] + counts[12] + counts[13] + counts[14]) / 15;
     
-    System.out.println("The average of all the numbers is: " + average + ".");
+    System.out.println("The average of all the numbers is " + average + " when rounded out.");
     
     //this for loop finds the average of all the elements in the "counts" array.
     //for(int i = 0; i < 15; i++) {
