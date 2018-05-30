@@ -105,9 +105,13 @@ public class DeleteLater3 {
       EndingSplashScreen();
       System.exit(0);
     }
-      else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
+      else{int x = 0; 
+           do { 
+             System.out.println(x); 
+             x++; 
+           } while(x < 10);
+           System.out.println("I don't understand that ");//remember to add loop later
+          }
       
       
       
