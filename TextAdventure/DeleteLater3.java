@@ -1,4 +1,4 @@
-//Note: THIS IS THE STARTING POINT!!!!
+//This file is only to make edits to the game to be copied when finished.
 
 //importing Scanner package
 import java.util.Scanner;
