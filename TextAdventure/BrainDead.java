@@ -10,20 +10,23 @@ public class BrainDead{
   public static void main(String[] args){
    
     Scanner input = new Scanner(System.in); //Scanner initialized
-    String response = "";
+    
+    //declare variables
+    int response;
     String action = "";
     
     //Gameplay starts
     StartingSplashScreen();
     intro();
     
-    System.out.println("You got 2 hours to KILL. What do you want to do?");
+    System.out.println("You got 2 hours to KILL.");
     
     //Space added here. Will now add spacing to make the game look more aesthitic
     System.out.println(" ");
     
+    System.out.println("Choose one of the following: breakfast or go to the docks? ");
     System.out.println("Eat breakfast or head to the docks? ");
-    response = input.next();
+    response = input.nextInt();
     Scene1(response);
     action = input.next();
     Scene2(action);
@@ -58,7 +61,7 @@ public class BrainDead{
   }//end of intro method
   
   //start of Scene 1 method
-  public static void Scene1(String response){
+  public static void Scene1(int response){
   
     /*
       System.out.println("You got 2 hours to KILL. What do you want to do?");
@@ -75,7 +78,7 @@ public class BrainDead{
     //Player gives response to question
     //response = input.next();
   
-    if((response.toLowerCase()).equals("breakfast")){
+    if(response < 1) {//Try to find out how to add "eat breakfast later if possible
       System.out.println("Let's go downstairs to the kitchen.");
       
       System.out.println(" ");
@@ -88,7 +91,7 @@ public class BrainDead{
       System.out.println(" ");
     }
     
-    else if((response.toLowerCase()).equals("docks")){
+    else if(response > 0){
       
       System.out.println(" ");
       
@@ -105,10 +108,6 @@ public class BrainDead{
       EndingSplashScreen();
       System.exit(0);
     }
-      else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
-      
       
       
       //THIS QUESTION LEADS TO SCENE 2 METHOD
@@ -133,6 +132,7 @@ public class BrainDead{
       else{
       System.out.println("I don't understand that ");//remember to add loop later
     }
+    
     
 }//end of Scene2 method
       
