@@ -33,6 +33,7 @@ public class CesarsCode{
     StartingSplashScreen();
     intro();
     
+    System.out.println(" ");
     
     System.out.println("You got 2 hours to KILL. What do you want to do?");
     
@@ -241,10 +242,10 @@ public class CesarsCode{
     
     //intro
     System.out.println("Last Night you went to a huge mansion party on Catalina Island. You just woke up from raging it the night before. ");
-    System.out.println("You remembered you have to catch the boat back home in the morning. It's 8:00 a.m. You got 2 hours to make it ");
-    System.out.println("to the docks. You're not worried, the docks are only 5 miles away. You figure a Uber will get you there ");
-    System.out.println("in 10 min. You have time. But little did you know Everyone was drugged on the island except you. They are all");
-    System.out.println("Branded Zombies with a hunger for your flesh ");
+    System.out.println("You remembered you have to catch the boat back home in the morning. It's 8:00 a.m. You have 2 hours to make it ");
+    System.out.println("to the docks. You're not worried, the docks are only 5 miles away. You figure an Uber will get you there ");
+    System.out.println("in 10 min. You have time, but little did you know Everyone was drugged on the island except you. They are all");
+    System.out.println("Brainded Zombies with a hunger for your flesh. ");
     System.out.println("What do you do? ");
     System.out.println("How will you survive? ");
    
