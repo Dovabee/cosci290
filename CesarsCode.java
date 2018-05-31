@@ -1,8 +1,10 @@
 /*
   
-  Big props to Cesar for finding out about do while loops!!!
+  Big props to Cesar for finding out about do while loops!!! PROPS!!!
   
 */
+
+//REMEMBER TO COPY THIS OVER TO BrainDead.java!!!
 
 /*
 Francisco Delgado
@@ -25,7 +27,7 @@ public class CesarsCode{
     
     //declared variables
     String response = "";
-    boolean good = false;
+    boolean loop = false;
     
     //Gameplay starts
     StartingSplashScreen();
@@ -44,105 +46,120 @@ public class CesarsCode{
    
       response = input.next();
      
-      if((response.toLowerCase()).equals("breakfast")){
-      good = true;
+      if((response.toLowerCase()).equals("breakfast")){//try to find out how to accept two words e.g. "eat breakfast"
+      loop = true;
 
-       System.out.println("Let's go downstairs to the kitchen.");
-      
-      System.out.println(" ");
-      
-      System.out.println("As you walk to the kitchen, you notice everyone is dead. You freak out " +
-                         "and run outside");
-      System.out.println("You try and look for help, but you notice there are braindead zombies everywhere! ");
-      System.out.println("Time to make a move ");
-      
-      System.out.println(" ");
-    }
-    
-    else if((response.toLowerCase()).equals("docks")){
-     good = true;
- 
-      System.out.println(" ");
-      
-      System.out.println("You take out your phone and call an Uber");
-      
-      System.out.println(" ");
-      
-      System.out.println("You patiently wait for the Uber to come no matter how long it takes because "
-                       + "you don't want to pay the cancellation fee.");
-      
-      System.out.println("You eventually die of thirst. The end! ");
+        System.out.println(" ");
         
-      //GAME OVER!
-      EndingSplashScreen();
-      System.exit(0);
-    }
-      else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
+        System.out.println("Let's go downstairs to the kitchen.");
       
-     }
-     while (!good);
+        System.out.println(" ");
+      
+        System.out.println("As you walk to the kitchen, you notice everyone is dead. You freak out "
+                           + "and run outside");
+        System.out.println("You try and look for help, but you notice there are braindead zombies everywhere! ");
+        System.out.println("Time to make a move ");
+      
+        System.out.println(" ");
+      }
+    
+      else if((response.toLowerCase()).equals("docks")){
+        loop = true;
  
+        System.out.println(" ");
       
-      //TRANSITION TO SCENE 2
+        System.out.println("You take out your phone and call an Uber");
+      
+        System.out.println(" ");
+      
+        System.out.println("You patiently wait for the Uber to come no matter how long it takes because "
+                           + "you don't want to pay the cancellation fee.");
+      
+        System.out.println("You eventually die of thirst. The end! ");
+      
+        //GAME OVER!
+        EndingSplashScreen();
+        System.exit(0);
+      }
+      else{
+        System.out.println("I don't understand that ");
+        System.out.println(" ");
+      }
+      
+    }
+    while (!loop);
+      
+    //TRANSITION TO SCENE 2
     
     System.out.println("Run or call for help? ");
-    good = false;
+    loop = false;
     do
     {
-    response = input.next();
+      response = input.next();
      
-    if((response.toLowerCase()).equals("run")){
-       good = true;  
-      System.out.println("You run to the main entrance of the mansion. ");
+      if((response.toLowerCase()).equals("run")){
+        loop = true;
+        
+        System.out.println(" ");
+        
+        System.out.println("You run to the main entrance of the mansion. ");
       }
       else if((response.toLowerCase()).equals("call")){
-        good = true;
+        loop = true;
+        
+        System.out.println(" ");
+        
         System.out.println("You pick up the phone, but it explodes in your face... It's fatal... You die. ");
         
         //GAME OVER!
-      EndingSplashScreen();
-      System.exit(0);
+        EndingSplashScreen();
+        System.exit(0);
       }
       else{
-      System.out.println("I don't understand that ");//remember to add loop later
+        System.out.println("I don't understand that ");
+        System.out.println(" ");
+      }
     }
-     }
-     while (!good);
-      
+    while (!loop);
+     
     System.out.println(" ");
     
     //TRANSITION TO SCENE 3
-    
     
     System.out.println("You see two paths. One leading upstairs, another leading downstairs. " +
                        "downstairs, you hear a faint growling sound... ");
     System.out.println("Which path will you take? Downstairs or upstairs? ");
     
-    good = false;
+    loop = false;
     do
     {
       response = input.next();
       
       if((response.toLowerCase()).equals("upstairs")){
-       good = true;  
-      System.out.println("Upstairs you enter an office room. ");
+        loop = true;
+        
+        System.out.println(" ");
+        
+        System.out.println("Upstairs you enter an office room. ");
       }
       else if((response.toLowerCase()).equals("downstairs")){//find out how to make user input two words later if possible.
-        good = true;
+        loop = true;
+        
+        System.out.println(" ");
+        
         System.out.println("You go downstairs, around the corner a zombie attacks and bites you! ");
-        System.out.println("Your infected now. You slowly succumb to the infection and become... a BrainDead zombie. ");
+        System.out.println("You're infected now. You slowly succumb to the infection and become... a BrainDead zombie. ");
         
         //GAME OVER!
-      EndingSplashScreen();
-      System.exit(0);
+        EndingSplashScreen();
+        System.exit(0);
       }
       else{
-      System.out.println("I don't understand that. Please enter downstairs or upstairs ");//remember to add loop later
+        System.out.println("I don't understand that. ");
+        System.out.println(" ");
+      }
     }
-    }
-     while (!good);
+    while (!loop);
     
     System.out.println(" ");
     
@@ -152,29 +169,36 @@ public class CesarsCode{
                        + "room and slowly make their way towards you.");
     System.out.println("Do you fight or flee? ");
     
-     good = false;
+    loop = false;
     do
     {
       response = input.next();
       
       if((response.toLowerCase()).equals("fight")){
-       good = true;  
-      System.out.println("With newfound bravery thanks to your recently aquired weapon, you attempt "
-                         + "to fight the zombies. ");
+        loop = true;
+        
+        System.out.println(" ");
+        
+        System.out.println("With newfound bravery thanks to your recently aquired weapon, you attempt "
+                           + "to fight the zombies. ");
         System.out.println("They quickly overpower and devour you. ");
         //GAME OVER!
-      EndingSplashScreen();
-      System.exit(0);
+        EndingSplashScreen();
+        System.exit(0);
       }
       else if((response.toLowerCase()).equals("flee")){//find out how to make user input two words later if possible.
-        good = true;
+        loop = true;
+        
+        System.out.println(" ");
+        
         System.out.println("You run past the zombies and lock the door behind you. ");
       }
       else{
-      System.out.println("I don't understand that ");//remember to add loop later
-    }
+        System.out.println("I don't understand that ");
+        System.out.println(" ");
       }
-     while (!good);
+    }
+    while (!loop);
     
     System.out.println(" ");
     
@@ -184,7 +208,7 @@ public class CesarsCode{
                        + "leading to the window.");
     System.out.println("And the other leading to a dead end filled with zombies making their way to you. ");
     System.out.println("With time running out, and the boat getting closer, you break the window with your hatchet "
-                      + "and jump out landing on the roof below. ");
+                       + "and jump out landing on the roof below. ");
     System.out.println("On the roof you can see the docks and the boat coming in, and you see zombies all along the road.");
     System.out.println("Off to the right and below you notice an open garage with two cars inside. You make a run for it "
                        + "and check to see if both cars are locked. ");
@@ -223,11 +247,11 @@ public class CesarsCode{
     System.out.println("Branded Zombies with a hunger for your flesh ");
     System.out.println("What do you do? ");
     System.out.println("How will you survive? ");
-    
+   
   }//end of intro method
        
-       
-     public static void EndingSplashScreen(){
+  //start of EndingSplashScreen method    
+  public static void EndingSplashScreen(){
       
       System.out.println("  ____    ______           ____        _____   __  __  ____    ____    __                                      \n"
                       + " /\\  _`\\ /\\  _  \\  /'\\_/`\\/\\  _`\\     /\\  __`\\/\\ \\/\\ \\/\\  _`\\ /\\  _`\\ /\\ \\                      \n"
@@ -242,12 +266,12 @@ public class CesarsCode{
 }
 
 /*
-good = false;
+loop = false;
     do
     {
       
     }
-     while (!good);
+     while (!loop);
      
    USE THIS CODE TO PERFORM DO WHILE LOOPS
  */
