@@ -1,6 +1,14 @@
 /*
-Cesar Gutierrez
+  
+  Big props to Cesar for finding out about do while loops!!!
+  
+*/
+
+/*
+Francisco Delgado
+
 Cosci 290
+
 Text Adventure project
 */
 
