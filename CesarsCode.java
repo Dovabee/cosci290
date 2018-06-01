@@ -57,7 +57,7 @@ public class CesarsCode{
         System.out.println(" ");
       
         System.out.println("As you walk to the kitchen, you notice everyone is dead. You freak out "
-                           + "and run outside");
+                           + "and run outside.");
         System.out.println("You try and look for help, but you notice there are braindead zombies everywhere! ");
         System.out.println("Time to make a move ");
       
