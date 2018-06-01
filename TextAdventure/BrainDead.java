@@ -32,8 +32,8 @@ public class BrainDead{
     intro();
     
     System.out.println(" ");
-    
-    System.out.println("You got 2 hours to KILL. What do you want to do?");
+    System.out.println("You have 2 hours remaining. You're feeling a little hungry. "
+                       + "What do you want to do?");
     
     //Space added here. Will now add spacing to make the game look more aesthitic
     System.out.println(" ");
@@ -51,16 +51,14 @@ public class BrainDead{
       loop = true;
 
         System.out.println(" ");
-        
         System.out.println("Let's go downstairs to the kitchen.");
       
         System.out.println(" ");
-      
         System.out.println("As you walk to the kitchen, you notice everyone is dead. You freak out "
                            + "and run outside.");
+        
         System.out.println("You try and look for help, but you notice there are braindead zombies everywhere! ");
         System.out.println("Time to make a move ");
-      
         System.out.println(" ");
       }
     
@@ -68,22 +66,19 @@ public class BrainDead{
         loop = true;
  
         System.out.println(" ");
-      
         System.out.println("You take out your phone and call an Uber");
-      
         System.out.println(" ");
-      
         System.out.println("You patiently wait for the Uber to come no matter how long it takes because "
                            + "you don't want to pay the cancellation fee.");
       
-        System.out.println("You eventually die of thirst. The end! ");
+        System.out.println("You eventually die of thirst. ");
       
         //GAME OVER!
         EndingSplashScreen();
         System.exit(0);
       }
       else{
-        System.out.println("I don't understand that ");
+        System.out.println("I don't understand that. Enter breakfast or docks. ");
         System.out.println(" ");
       }
       
@@ -92,7 +87,7 @@ public class BrainDead{
       
     //TRANSITION TO SCENE 2
     
-    System.out.println("Run or call for help? ");
+    System.out.println("Run back to the mansion or call for help? ");
     loop = false;
     do
     {
@@ -102,14 +97,12 @@ public class BrainDead{
         loop = true;
         
         System.out.println(" ");
-        
-        System.out.println("You run to the main entrance of the mansion. ");
+        System.out.println("You run and enter the main entrance of the mansion. ");
       }
       else if((response.toLowerCase()).equals("call")){
         loop = true;
         
         System.out.println(" ");
-        
         System.out.println("You pick up the phone, but it explodes in your face... It's fatal... You die. ");
         
         //GAME OVER!
@@ -117,18 +110,17 @@ public class BrainDead{
         System.exit(0);
       }
       else{
-        System.out.println("I don't understand that ");
+        System.out.println("I don't understand that. Enter run or call. ");
         System.out.println(" ");
       }
     }
     while (!loop);
-     
-    System.out.println(" ");
     
     //TRANSITION TO SCENE 3
     
-    System.out.println("You see two paths. One leading upstairs, another leading downstairs. " +
-                       "downstairs, you hear a faint growling sound... ");
+    System.out.println("You see two paths. One leading upstairs, another leading downstairs. "
+                       + "You hear a faint growling sound coming from downstairs... ");
+    System.out.println(" ");
     System.out.println("Which path will you take? Downstairs or upstairs? ");
     
     loop = false;
@@ -140,15 +132,13 @@ public class BrainDead{
         loop = true;
         
         System.out.println(" ");
-        
         System.out.println("Upstairs you enter an office room. ");
       }
       else if((response.toLowerCase()).equals("downstairs")){//find out how to make user input two words later if possible.
         loop = true;
         
         System.out.println(" ");
-        
-        System.out.println("You go downstairs, around the corner a zombie attacks and bites you! ");
+        System.out.println("You go downstairs, unfortunately, around the corner a zombie attacks and bites you! ");
         System.out.println("You're infected now. You slowly succumb to the infection and become... a BrainDead zombie. ");
         
         //GAME OVER!
@@ -156,7 +146,7 @@ public class BrainDead{
         System.exit(0);
       }
       else{
-        System.out.println("I don't understand that. ");
+        System.out.println("I don't understand that. Enter downstairs or upstairs.");
         System.out.println(" ");
       }
     }
@@ -168,6 +158,9 @@ public class BrainDead{
     
     System.out.println("Inside the office room you find and pick up a hatchet. Suddenly, two zombies enter the "
                        + "room and slowly make their way towards you.");
+    
+    System.out.println("The slow moving zombies are quite larger than the ones you have seen before. ");
+    System.out.println(" ");
     System.out.println("Do you fight or flee? ");
     
     loop = false;
@@ -179,10 +172,11 @@ public class BrainDead{
         loop = true;
         
         System.out.println(" ");
-        
         System.out.println("With newfound bravery thanks to your recently aquired weapon, you attempt "
                            + "to fight the zombies. ");
-        System.out.println("They quickly overpower and devour you. ");
+        
+        System.out.println("Your first target stares at you as if giving a deadpan stare and judging you for your poor decision. "
+                           + "They quickly overpower and devour you. ");
         //GAME OVER!
         EndingSplashScreen();
         System.exit(0);
@@ -191,7 +185,6 @@ public class BrainDead{
         loop = true;
         
         System.out.println(" ");
-        
         System.out.println("You run past the zombies and lock the door behind you. ");
       }
       else{
@@ -207,20 +200,27 @@ public class BrainDead{
     
     System.out.println("Leaving the previous room behind you enter a hallway to discover one side "
                        + "leading to the window.");
+    
     System.out.println("And the other leading to a dead end filled with zombies making their way to you. ");
     System.out.println("With time running out, and the boat getting closer, you break the window with your hatchet "
                        + "and jump out landing on the roof below. ");
+    
     System.out.println("On the roof you can see the docks and the boat coming in, and you see zombies all along the road.");
     System.out.println("Off to the right and below you notice an open garage with two cars inside. You make a run for it "
                        + "and check to see if both cars are locked. ");
+    
     System.out.println("Inside the garage, mounted on the wall, you see a lock box. You bust the lock and break open "
                        + "the box and find the keys. ");
+    
     System.out.println("You use the keys to open and start one of the cars. You drive down the main road dodging some "
                        + "zombies along the way. ");
+    
     System.out.println("You make it to the docks and see the boat at the end. You have to make a run for it. "
                        + "You successfully run around a few zombies and make it to the boat.");
+    
     System.out.println("You see the captain and tell him to leave this island. He complies and the boat soon "
                        + "leaves shortly. ");
+    
     System.out.println("YOU WIN!");
     EndingSplashScreen();
   }//end of main
